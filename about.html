@@ -66,16 +66,53 @@
 </header>
 <!---------------------------------------------------- JUMBOTRON ------------------------------------------------------->
 <div class="jumbotron jumbotron-fluid"
-     style="background-image: url(img/jumbotron05.jpg); background-size: cover;  opacity: 0.9">
-    <div class="container col-sm-8 mx-auto">
-        <h1 class="display-2 text-white text-left text-uppercase">Jazz legends</h1>
-        <p class="text-white-50 text-right">Louis Amstrong, Duke Ellington, Benny Goodman, Miles Davis, Ella Fitzgerald
-            and more
-            ...</p>
-    </div>
+     style="background-image: url(img/jumbotron09.jpg); background-size: cover;  opacity: 0.9; height: 512px;">
 </div>
 <!---------------------------------------------------- CONTENTS -------------------------------------------------------->
-
+<div class="container marketing">
+    <hr class="featurette-divider"/>
+    <h1 class="display-3 text-muted text-uppercase mb-5"><span class="text-info">About</span> us</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="img/people01.jpg" class="rounded-lg mb-5" alt="Abigail Smith">
+            <h2 class="text-uppercase text-muted"><span class="text-info">Abigail</span> Smith</h2>
+            <p class="text-justify text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et
+                dolore magna aliqua. Erat pellentesque adipiscing commodo elit at imperdiet. Facilisi cras fermentum
+                odio eu feugiat pretium nibh ipsum. Quam viverra orci sagittis eu volutpat odio facilisis mauris. </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="img/people02.jpg" class="rounded-lg mb-5" alt="Antonio Gonzales">
+            <h2 class="text-uppercase text-muted"><span class="text-info">Antonio</span> Gonzales</h2>
+            <p class="text-justify text-dark">Egestas sed tempus urna et pharetra pharetra. Vitae semper quis lectus
+                nulla at
+                volutpat diam ut
+                venenatis. Eget est lorem ipsum dolor sit amet. Id ornare arcu odio ut. Vel facilisis volutpat est velit
+                egestas. Proin libero nunc consequat interdum varius. Scelerisque felis imperdiet proin fermentum leo
+                vel. Purus sit amet volutpat consequat mauris. Donec massa sapien faucibus et.</p>
+        </div>
+        <div class="col-lg-4">
+            <img src="img/people03.jpg" class="rounded-lg mb-5" alt="T.Jay Parker">
+            <h2 class="text-uppercase text-muted"><span class="text-info">T.Jay</span> Parker</h2>
+            <p class="text-justify text-dark">Consectetur lorem donec massa sapien faucibus et molestie ac. Magna
+                fringilla urna
+                porttitor rhoncus.
+                Accumsan lacus vel facilisis volutpat est velit egestas dui id. Turpis cursus in hac habitasse platea.
+                Praesent semper feugiat nibh sed pulvinar proin. Eu lobortis elementum nibh tellus. Ac tortor vitae
+                purus faucibus ornare.</p>
+        </div>
+    </div>
+</div>
+<hr class="featurette-divider"/>
+<div class="container bg-info">
+    <h1 class="display-3 text-white text-uppercase mb-5"><span class="text-white">Newsletter</span></h1>
+    <p></p>
+</div>
+<hr class="featurette-divider"/>
+<div class="container">
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+</div>
 <!---------------------------------------------------- FOOTER ---------------------------------------------------------->
 <footer class="container">
     <hr class="featurette-divider">
@@ -85,6 +122,18 @@
     <p class="text-black-50">©JazzCat Café 2020 - All rights reserved.</p>
 </footer>
 <!------------------------------------------------ OPTIONAL JAVASCRIPT ------------------------------------------------->
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+<script src="js/action.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
